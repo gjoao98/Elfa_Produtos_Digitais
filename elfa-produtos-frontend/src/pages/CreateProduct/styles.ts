@@ -34,7 +34,7 @@ export const Form = styled.form`
   button {
     align-self: flex-start;
     padding: 0.75rem 1.5rem;
-    background-color: ${props => props.theme['gray-700']};
+    background-color: ${props => props.theme['gray-900']};
     color: white;
     border: none;
     border-radius: 8px;

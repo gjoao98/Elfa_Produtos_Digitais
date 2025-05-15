@@ -10,7 +10,7 @@ export const HeaderContainer = styled.header`
   background: ${(props) => props.theme.white};
 
   img {
-    width: 9rem;
+    width: 8.5rem;
   }
 `;
 
@@ -34,4 +34,8 @@ export const LogoButton = styled.button`
   border: none;
   padding: 0;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 `;

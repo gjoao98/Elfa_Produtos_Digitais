@@ -22,7 +22,7 @@ export const SearchInput = styled.input`
   font-size: 1rem;
 
   &:focus {
-    outline: 2px solid ${props => props.theme['red-500']};
+    outline: 2px solid ${props => props.theme['blue-900']};
   }
 `;
 
