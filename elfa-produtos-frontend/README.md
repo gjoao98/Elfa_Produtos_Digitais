@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
+# Elfa Produtos Digitais — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é a aplicação **frontend** do desafio técnico Elfa Produtos Digitais. Ele permite visualizar e cadastrar produtos, consumindo uma API REST desenvolvida em Node.js com banco em arquivos `.json`.
 
-Currently, two official plugins are available:
+## 🔎 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Listagem de produtos em grid com filtro por nome ou marca simultaneamente
+- ✅ Cadastro de produtos com preview de imagem e validação com Zod
+- ✅ Integração com backend local via Axios
+- ✅ Layout responsivo usando styled-components
+- ✅ Navegação com React Router DOM
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React + TypeScript
+- styled-components
+- React Hook Form + Zod
+- Axios
+- React Router DOM
+- Vite
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## ▶️ Como rodar o projeto
+
+### 1. Acesse a pasta do frontend e instale as dependências
+```bash
+cd frontend
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Acesse: http://localhost:5173
+- A API precisa estar rodando em http://localhost:3000
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧪 Testar funcionalidades
+- Página inicial lista os produtos
+- Campo de busca filtra por nome ou marca simultaneamente
+- Botão no topo navega para a tela de cadastro ou para tela de listagem dos produtos
+- O cadastro envia os dados para a API e retorna para a listagem dos produtos
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## 🗂️ Estrutura do Projeto
+
+```bash
+src/
+├── components/
+├── layouts/
+├── pages/
+│   ├── ProductList/
+│   └── CreateProduct/
+├── services/
+├── styles/
+├── Router.tsx
+├── main.tsx
+└── App.tsx
 ```
+
+### 🧑‍💻 Desenvolvido por Gabriel João
