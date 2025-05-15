@@ -28,7 +28,7 @@ npm install
 npm run dev
 ```
 
-- Acesse: http://localhost:5173
+- Acesse: http://localhost:4000
 - A API precisa estar rodando em http://localhost:3000
 
 ## 🧪 Testar funcionalidades

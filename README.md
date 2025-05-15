@@ -32,7 +32,7 @@ cd frontend
 npm install
 npm run dev
 ```
-#### O frontend ficará disponível em: http://localhost:5173
+#### O frontend ficará disponível em: http://localhost:4000
 
 ## 🌐 Funcionalidades
 ### ✅ Frontend
@@ -48,7 +48,7 @@ npm run dev
 - Dados armazenados em disco (/data/*.json)
 
 ### 🧪 Teste rápido
-- Acesse http://localhost:5173
+- Acesse http://localhost:4000
 - Use o campo de busca para filtrar produtos
 - Clique em "Cadastrar Produto" e crie um novo
 - O produto será salvo no backend (data/products.json) e listado automaticamente
