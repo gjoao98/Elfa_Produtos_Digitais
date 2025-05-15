@@ -19,16 +19,15 @@ export const CardContainer = styled.div`
 export const ImageWrapper = styled.div`
   width: 100%;
   height: 180px;
-  background-color: #f5f5f5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
+  border-radius: 8px;
 
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
+    display: block;
   }
 `;
 
