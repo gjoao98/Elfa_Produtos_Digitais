@@ -18,6 +18,19 @@ Elfa_Produtos_Digitais/
 ├── frontend/ → Aplicação React com listagem e cadastro
 └── README.md → Instruções gerais
 ```
+
+## ⚙️ Configuração via .env
+O projeto utiliza variáveis de ambiente para facilitar a configuração das portas e URLs, tanto no frontend quanto no backend.
+Cada pasta (frontend/ e backend/) contém um arquivo .env.example com os valores esperados.
+
+### 🔐 Como configurar
+- Faça uma cópia do arquivo .env.example em cada pasta e defina as variáveis necessárias para o projeto, como está no .env de exemplo:
+- backend/.env
+- frontend/.env
+
+**Obs:** As variáveis de ambiente são opcionais.
+Caso não estejam definidas, o código já usa valores padrão embutidos (3000 para o backend, 4000 para o frontend) para garantir que tudo funcione normalmente.
+
 ### Instale e inicie a API
 ```bash
 cd backend
